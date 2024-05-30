@@ -8,7 +8,7 @@ function debounce(func, wait, immediate) {
         };
         var callNow = immediate && !timeout;
         clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
+        timeout = setTimeout(later, wait);w
         if (callNow) func.apply(context, args);
     };
 }
@@ -45,5 +45,5 @@ const email = localStorage.getItem('userEmail');
 if (name && email) {
     document.getElementById('userInfo').innerHTML = `<p>Tên: ${name}</p><p>Email: ${email}</p>`;
 } else {
-    document.getElementById('userInfo').innerHTML = '<p>Chưa có thông tin người dùng.</p>';
+    document.getElementById('userInfo').innerHTML = '<p>Chưa có thông tin người dùng.</p>' ;
 }
